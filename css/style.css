@@ -1,0 +1,154 @@
+/* we are linking pre declared css with the main css*/
+@import url('pre.css');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--col-glass);
+}
+
+/* Header design starts from here.*/
+header {
+    font-family: var(--font-Pop);
+    width: 70vw;
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow-light);
+    border-radius: var(--round-2xl);
+    position: fixed;
+    top: 10px;
+    left: 30%;
+    transform: translate(-25%, 0);
+    z-index: 99999;
+}
+
+header li {
+    font-weight: 200;
+    transition: all 1s var(--cubic-ease-beiz);
+}
+
+header li:hover .svg-arrow {
+    transform: rotate(180deg);
+}
+
+/* Header design ends here.*/
+
+/* ----------------------------------  */
+
+/* Main design starts from here.*/
+/* ----------------------------------  */
+/* section-1 design starts from here.*/
+.container {
+    margin: auto;
+    max-width: 1440px;
+    min-height: 100vh;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.--home_bg-img {
+    flex: 1 0 0;
+    height: 100vh;
+}
+
+.--home_disc-bar {
+    flex: 1 0 0;
+    height: 100vh;
+}
+
+.--home_heading {
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-family: var(--font-work);
+    color: var(--col-black);
+}
+
+.--home_heading span {
+    color: var(--col-orange-500);
+}
+
+/* section-1 design ends here.*/
+
+/* -----------------------------  */
+/* section-2 design ends here.*/
+#ShowCase {
+    margin-top: 30px;
+}
+
+.--show_contact {
+    width: 90vw;
+    border: 2px solid rgba(246, 199, 28, 0.339);
+    border-top-left-radius: var(--round-2xl);
+    border-bottom-left-radius: var(--round-2xl);
+    margin: auto;
+}
+
+.--show_contact input {
+    font-family: var(--font-mono);
+    flex: 1 0 0;
+    outline: none;
+    border: 1px solid rgba(246, 199, 28, 0.339);
+    border-radius: var(--round-lg);
+    font-size: var(--text-md);
+    background: var(--col-yellow-500);
+    color: var(--col-black);
+}
+.--show_contact input::placeholder{
+    color: var(--col-black);
+}
+
+.--show_contact .show-btn {
+    font-family: var(--font-work);
+    width: 100px;
+    height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+.--show_container-box{
+    width: 100vw;
+    height: 30vh;
+}
+.--show_container-box .--show_box{
+    font-family: var(--font-Pop);
+    flex: 1 0 0;
+    min-width: 320px;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.294);
+}
+.--show_box span{
+    font-size: clamp(2rem,4vw,4rem);
+    font-weight: 700;
+}
+.--show_box span:first-child{
+    color: var(--col-purp-700);
+}
+.--show_box span:nth-child(2){
+    color: var(--col-orange-500);
+}
+.--show_box span:last-child{
+    color: var(--col-blue-600);
+}

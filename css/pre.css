@@ -1,0 +1,244 @@
+/* Design By Rishabh Raj. A frontend developer with 2+ year of experience. */
+
+:root {
+
+    --font-Pop: 'Poppins';
+    --font-work: 'Work Sans';
+    --font-mono: 'Roboto Mono';
+
+    --text-xs: 14px;
+    --text-sm: 16px;
+    --text-md: 20px;
+    --text-lg: 24px;
+    --text-xl: 28px;
+    --text-2xl: 32px;
+
+    --border: 1px solid;
+    --border-dash: 1px dashed;
+    --border-2: 2px solid;
+
+    --col-purp-500: #6805bb;
+    --col-purp-700: #5b04b6;
+    --col-pale: #fefbe9;
+    --col-peach: #e1eedd;
+    --col-yellow-400: #fcde67;
+    --col-yellow-500: #f1cf54;
+    --col-pink-700: #de5499;
+    --col-pink-200: #f2ebe9;
+    --col-orange-500: #ff5001;
+    --col-gray-200: #efefef;
+    --col-slate-300: #424242;
+    --col-black: #131313;
+    --col-blue-500: #1459e5;
+    --col-blue-600: #1353d1;
+    --col-pastel: #eeeeee;
+    --col-blue-200: #82d2d5;
+    --col-darkblue-100: #5c7c89;
+    --col-darkblue-700: #1c3342;
+    --col-glass: #eaf0f0;
+
+    --round-md: 5px;
+    --round-full: 100%;
+    --round-sm: 2px;
+    --round-lg: 10px;
+    --round-xl: 20px;
+    --round-2xl: 30px;
+
+    --inner-shadow-full: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    --shadow-light: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 0.5px;
+    --shadow-md: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    --shadow-airpod: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    --cubic-mid-slow-beiz: cubic-bezier(0, 533.33, 1, 533.33);
+    --cubic-ease-beiz: cubic-bezier(0.5, 700, 0.5, -700);
+
+    --lin-bg-gradient-green: linear-gradient(to right, #4ac29a, #bdfff3);
+    --lin-bg-gradient-bluishPink: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    --lin-bg-gradient-bluishPurple: linear-gradient(to right, #8e2de2, #4a00e0);
+    --lin-bg-gradient-mango: linear-gradient(to right, #f09819, #edde5d);
+
+}
+
+
+/* we are declaring all design of flex here and will access through class */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-3 {
+    gap: 3px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.box-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* we are declaring all design of grid here and will access through class */
+.grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.place-center {
+    place-items: center;
+}
+
+.grid-temp-cols-auto {
+    grid-template-columns: repeat(autofit, minmax(320px, 1fr));
+}
+
+/* we will now use different text sizes for website */
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-2xl {
+    font-size: var(--text-2xl);
+}
+
+/* we will now set paddings and margin according to choice for website */
+.pad-10 {
+    padding: 10px;
+    margin: 2px;
+}
+
+.pad-5 {
+    padding: 5px;
+    margin: 1px;
+}
+
+.pad-20 {
+    padding: 20px;
+    margin: 3px;
+}
+
+.pad-x-10 {
+    padding-inline: 10px;
+}
+
+.pad-x-5 {
+    padding-inline: 5px;
+}
+
+.pad-y-10 {
+    padding-block: 10px;
+}
+
+.pad-y-5 {
+    padding-block: 5px;
+}
+
+.margin-5 {
+    margin: 5px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+/* some pre maded styles. */
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-black {
+    color: var(--col-black);
+}
+
+.btn-grads {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    background: var(--lin-bg-gradient-bluishPink);
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out
+}
+
+.btn-grads:hover {
+    box-shadow: 0 0 20px 2px rgba(235, 7, 7, 0.2);
+}
+
+.btn-bord {
+    width: 130px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--col-black);
+    color: #fff;
+    border-radius: 5px;
+    transition: all .4s;
+    text-transform: capitalize;
+    color: var(--col-black);
+}
+
+.btn-bord:first-child:hover, .btn-bord:last-child {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+        0 15px 0 -4px #39a2db,
+        0 16px 10px -3px #39a2db;
+}
+.btn-bord:last-child:hover{
+    transform: translateY(0px);
+    box-shadow: none;
+}

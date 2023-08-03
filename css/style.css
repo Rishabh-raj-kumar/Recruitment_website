@@ -72,6 +72,7 @@ header li:hover .svg-arrow {
 
 .--home_disc-bar {
     flex: 1 0 0;
+    min-width: 300px;
     height: 100vh;
 }
 
@@ -88,7 +89,7 @@ header li:hover .svg-arrow {
 /* section-1 design ends here.*/
 
 /* -----------------------------  */
-/* section-2 design ends here.*/
+/* section-2 design starts from here.*/
 #ShowCase {
     margin-top: 30px;
 }
@@ -130,25 +131,87 @@ header li:hover .svg-arrow {
 
 .--show_container-box{
     width: 100vw;
-    height: 30vh;
+    min-height: 30vh;
 }
 .--show_container-box .--show_box{
     font-family: var(--font-Pop);
     flex: 1 0 0;
     min-width: 320px;
-    height: 100%;
-    border: 1px solid rgba(128, 128, 128, 0.294);
+    min-height: 30vh;
+    border: 2px solid rgba(238, 197, 16, 0.294);
 }
 .--show_box span{
     font-size: clamp(2rem,4vw,4rem);
     font-weight: 700;
 }
-.--show_box span:first-child{
-    color: var(--col-purp-700);
+.--show_box p{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--col-darkblue-700);
 }
-.--show_box span:nth-child(2){
+.--show_box:nth-child(1) span{
+    color: var(--col-pink-700);
+}
+.--show_box:nth-child(2) span{
     color: var(--col-orange-500);
 }
-.--show_box span:last-child{
+.--show_box:last-child span{
     color: var(--col-blue-600);
+}
+.--show_comp svg{
+    width: 100%;
+}
+.--show-comp_cont{
+    width: 100vw;
+    border-bottom: 3px solid rgba(238, 197, 16, 0.294);
+}
+.--show-comp_cont .--show_comp{
+    flex: 1 0 0;
+}
+/* section-2 design ends here.*/
+
+/* -----------------------------  */
+/* section-3 design starts from here.*/
+.User-loves{
+    margin-top: 50px;
+    min-height: 100vh;
+}
+.--User-loves-bar div{
+    font-family: var(--font-Pop);
+    flex: 1 0 0;
+    min-width: 400px;
+}
+.--User-loves-bar div img{
+   width: 100%;
+}
+.--User-loves-bar h1{
+    font-size: clamp(1.5rem,3vw,2.5rem);
+    margin-inline: 50px;
+}
+.--User-loves-bar li{
+    margin-inline: 10px;
+}
+/* section-3 design ends here.*/
+
+/* -----------------------------  */
+/* section-4 design starts from here.*/
+.--people-speak h1{
+    text-align: center;
+    font-weight: 300;
+    font-family: var(--font-Pop);
+    font-size: clamp(2rem,4vw,4rem);
+}
+.comment-box{
+    flex: 1 0 0;
+    min-width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.comment-box p{
+    font-size: clamp(1rem,1.8vw,1.8rem);
+    font-family: var(--font-Pop);
+}
+.comment-box svg:last-child{
+    float: right;
 }

@@ -215,3 +215,26 @@ header li:hover .svg-arrow {
 .comment-box svg:last-child{
     float: right;
 }
+/* section-4 design ends here.*/
+
+/* Footer design starts from here. */
+footer{
+    min-height: 50vh;
+    background: var(--col-purp-700)
+}
+.links-box{
+    min-height:45vh;
+    justify-content: space-around;
+}
+.footer-info{
+    height: 5vh;
+    font-size: var(--text-md);
+    font-family: var(--font-work);
+    text-align: center;
+    width: 100vw;
+    background: var(--col-purp-500);
+    color: white;
+}
+.footer-info p{
+    padding: 5px;
+}

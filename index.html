@@ -29,13 +29,13 @@
 
 </head>
 
-<body>
+<body onload="handleShow()">
     <!-- Header -->
     <header class=" pad-20 flex justify-space">
         <div>
             <h1 class=".heading">Task</h1>
         </div>
-        <nav class=" flex gap-10">
+        <nav class="gap-10">
             <ul class=" flex gap-10">
                 <li class=" flex items-center text-md gap-3"><a href="#" class="text-black">Discover</a>
                     <svg class="svg-arrow" height="25px" id="Layer_1" style="enable-background:new 0 0 512 512;"
@@ -72,6 +72,10 @@
             </ul>
             <button class="btn-grads text-md">LOGIN</button>
         </nav>
+
+        <button>
+            <img src="./assets/hamb.svg">
+        </button>
     </header>
 
     <!-- main content -->
@@ -87,7 +91,7 @@
                     <button class="btn-bord">Want a Job</button>
                 </div>
             </div>
-            <div>
+            <div class="img-box">
                 <img src="./assets/home_bg.png" alt="home_design" class="img">
             </div>
         </section>
@@ -100,15 +104,15 @@
             </div>
             <div class="--show_container-box flex flex-wrap">
                 <div class="--show_box flex-col box-center">
-                    <span>100+</span>
+                    <span class="techie-count" data-target="100">100+</span>
                     <p>New Tech Jobs</p>
                 </div>
                 <div class="--show_box flex-col box-center">
-                    <span>1K+</span>
+                    <span class="hire-count" data-target="1000">1K+</span>
                     <p>Hiring every Month</p>
                 </div>
                 <div class="--show_box flex-col box-center">
-                    <span>5k+</span>
+                    <span class="startup-count" data-target="5000">5K+</span>
                     <p>New Startup Candidates</p>
                 </div>
             </div>
@@ -279,9 +283,8 @@
                             <li>We are responsive to user needs and keep them updated on their job search progress.</li>
                         </div>
                         <div class="flex gap-3">
-                            <svg id="Layer_1_1_" style="enable-background:new 0 0 64 64;" version="1.1"
-                            height="48" width="48"
-                                viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1_1_" style="enable-background:new 0 0 64 64;" version="1.1" height="48"
+                                width="48" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g>
                                     <rect height="2" width="8" x="28" y="57" />
@@ -313,10 +316,32 @@
         <!-- section3 ends  here. -->
 
         <!-- section4 starts from here. -->
+        <section class="blog pad-20">
+            <button class="btn-shad">All Blogs</button>
+            <div class="blog-container flex-col margin-10">
+              <div class="blog-box flex">
+                   <img src="./assets/living_room.png">
+                   <div class="blog-desc flex-col box-center">
+                    <h2>More like this...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, itaque.</p>
+                   </div>
+              </div>
+              <div class="blog-box flex">
+                <div class="blog-desc flex-col box-center">
+                 <h2>More like this...</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, itaque.</p>
+                </div>
+                <img src="./assets/living_room.png">
+           </div>
+            </div>
+        </section>
+        <!-- section4 ends  here. -->
+
+        <!-- section5 starts from here. -->
         <section>
             <div class="--people-speak margin-20">
                 <h1>Our User Reviews</h1>
-                <div class="flex gap-20 flex-wrap pad-20">
+                <div class="comment-container flex gap-20 flex-wrap">
                     <div class="comment-box">
                         <svg enable-background="new 0 0 500 500" height="25px" id="Layer_1" version="1.1"
                             viewBox="0 0 500 500" width="25px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -380,50 +405,52 @@
                 </div>
             </div>
         </section>
-        <!-- section4 ends here-->
+        <!-- section5 ends here-->
 
     </main>
 
     <!-- footer -->
     <footer class="flex-col">
-       <div class="links-box flex flex-wrap items-center pad-20">
+        <div class="links-box flex flex-wrap items-center pad-20">
             <ul>
-                <h1>Hello</h1>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
+                <h1>Task</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </ul>
             <ul>
-                <h1>Hello</h1>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
+                <h1>Employers</h1>
+                <li>Employee signUp</li>
+                <li>For Employers</li>
+                <li>Employer FaQ</li>
             </ul>
             <ul>
-                <h1>Hello</h1>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
+                <h1>Company</h1>
+                <li>Careers</li>
+                <li>Privacy Policy</li>
+                <li>about us</li>
             </ul>
             <ul>
-                <h1>Hello</h1>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
-                <li>hii</li>
+                <h1>candidates</h1>
+                <li>For candidates</li>
+                <li>Candidates Signup</li>
+                <li>Invite and earn</li>
+                <li>Candidate FaQ</li>
             </ul>
         </div>
         <div class="footer-info">
             <p>Website Created By Rishabh.</p>
         </div>
     </footer>
+
+    <!--- website functionality starts from here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+
+    <script src="./js/main.js"></script>
 
 </body>
 
